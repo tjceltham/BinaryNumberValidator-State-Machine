@@ -33,7 +33,7 @@ namespace BinaryNumberValidator
             // Actions on state Transition
             a1 = action1;
             a2 = action2;
-            actions = new Del[,] { { a1, a2 }, { a2, a1 }, { a2, a2 } };
+            actions = new Del[,] { { a2, a1 }, { a1, a2 }, { a1, a2 } };
             reset();
         }
 
