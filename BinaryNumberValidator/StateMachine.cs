@@ -41,9 +41,10 @@ namespace BinaryNumberValidator
 
         public void input(int message)
         {
-            state = stateMachine[state, message];
+            
 
             output(actions[state, message]);
+            state = stateMachine[state, message];
         }
 
         public bool inAccept() { return acceptState == state; }
